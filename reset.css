@@ -1,0 +1,43 @@
+/* Полный сброс стилей */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li, form, label, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Улучшение доступности для элементов */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Элементы списка */
+ul, ol {
+  list-style: none;
+}
+
+/* Кнопки */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Текстовые элементы */
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+/* Изображения */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
