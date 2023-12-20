@@ -15,18 +15,21 @@
         <img src="./assing/logo-removebg-preview.png" alt="">
       </div>
       <nav class="nav">
+        <div class="burger-menu">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
         <ul>
-          <li class="nav__item active"><a href="#">Башкы сайт</a></li>
-          <li class="nav__item"><a href="#about">о компании</a></li>
-          <li class="nav__item"><a href="#lawyer">Сотрудника</a></li>
-          <li class="nav__item"><a href="#servisec">Услуги</a></li>
-          <li class="nav__item"><a href="#partners">Oноктоштор</a></li>
-          <!-- <li class="nav__item"><a href="#">жеке жактар</a></li>
-          <li class="nav__item"><a href="#">Юридикалык жактар</a></li>
-          <li class="nav__item"><a href="#">Чет элдик жактар</a></li> -->
-          <!-- <li class="nav__item"><a href="#">Суроолор</a></li> -->
-          <li class="nav__item"><a href="#contacts">Байланыш</a></li>
+          <li class="nav__item active"><a id="bashky-bet" href="#">Башкы бет</a></li>
+          <li class="nav__item"><a id="company" href="#about">Компания</a></li>
+          <li class="nav__item"><a id="kyzmattar" href="#servisec">Кызматтар</a></li>
+          <li class="nav__item"><a id="ulgulor" href="#">Үлгүлөр</a></li>
+          <li class="nav__item"><a id="onoktoshtor" href="#partners">Oноктоштор</a></li>
+          <li class="nav__item"><a id="soorolor" href="#">Суроолор</a></li>
+          <li class="nav__item"><a id="baylahysh" href="#contacts">Байланыш</a></li>
         </ul>
+        <div class="lang"><div class="kg active">кыргызча</div> | <div class="ru">русский</div></div>
       </nav>
     </div>
   </header>
@@ -83,40 +86,50 @@
         <h2>Биздин кызматтар</h2>
         <div class="our-servisec__items">
           <div class="our-servisec__item">
-
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt=""><h2>Сот органдарындагы окулчулук</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text1">Бардык сот инстанцияларында кызыкчылыктарды коргоо</h2></div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt="">
-              <h2>Юридикалык жактан каттоо, кайра катто жана жоюу</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text2">Оозеки жана кат жузундо кенеш беруу</h2></div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt="">
-              <h2>Юридикалык жактардын ишмердуулугун укуктук тейлоо</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text3">Бардык иштерде багыт аныктап беруу</h2>
+            </div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt="">
-            <h2>Документтерге укуктук экспертиза жургузуу</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text4">Доо арыздарды даярдоо</h2>
+            </div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt=""><h2>Уй булоо жана мулк болуштуруу</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text5">Сот чыгарган актыларды даттануу</h2>
+            </div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt=""><h2>Эмгек талаш-тартыштары</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text6">Апелляциялык жана кассациялык даттанууларды даярдоо</h2>
+            </div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt=""><h2>Салык жана бажы талаштары</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text7">Жарашуу келишимдерин тузуу</h2>
+            </div>
           </div>
           <div class="our-servisec__item">
-            <div class="our-servisec__item_title"><img src="./assing/icons//law.png" alt=""><h2>Жеке менчик маселелери</h2></div>
-            
+            <div class="our-servisec__item_title">
+              <img src="./assing/icons//law.png" alt="">
+              <h2 id="text8">Аткаруу ондурушуно катышуу</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -194,5 +207,6 @@
     slider.addEventListener('mouseover', () => clearInterval(slideInterval));
     slider.addEventListener('mouseout', () => setInterval(nextSlide, 3000));
   </script> -->
+  <script src="./script.js"></script>
 </body>
 </html>
